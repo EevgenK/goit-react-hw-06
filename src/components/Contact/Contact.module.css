@@ -1,0 +1,39 @@
+.item {
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.icon {
+  color: var(--accent-color);
+  font-size: 20px;
+}
+
+.name,
+.number {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 22px;
+}
+.btn {
+  padding: 4px 6px;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--second-text-color);
+  transition: background-color var(--animation-mode);
+  &:focus,
+  &:hover {
+    background-color: red;
+  }
+}

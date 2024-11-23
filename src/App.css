@@ -1,0 +1,43 @@
+section {
+  width: 100vw;
+
+  padding: 20px 0px;
+  background-color: lightgrey;
+}
+.container {
+  text-align: center;
+  width: 320px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.title {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+@media (min-width: 360px) {
+  .container {
+    width: 360px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0px 32px;
+  }
+  section {
+    padding: 32px 0px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0px 40px;
+  }
+  section {
+    padding: 40px 0px;
+  }
+}
+
+/* Evgen_Kulbachenko_Junior_Frontend_Developer */
+
+/* Evgen_Kulbachenko_Frontend_Developer */
