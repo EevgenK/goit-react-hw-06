@@ -30,9 +30,12 @@ const ContactForm = () => {
   const nameFieldId = useId();
   const numberFieldId = useId();
   const handleSubmit = ({ name, number }, actions) => {
-    if (contacts.find((el) => el.name === name || el.number === number)) {
+    const duplicate = contacts.find(
+      (el) => el.name === name || el.number === number
+    );
+    if (duplicate) {
       return toast(
-        `You already have ${name} or number: ${number} in your contacts list. Please check and try again!`
+        `You already have ${duplicate.name} with number ${duplicate.number} in your contacts list. Please check and try again!`
       );
     }
     dispatch(addContact({ name, number }));
